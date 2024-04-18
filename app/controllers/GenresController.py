@@ -1,8 +1,9 @@
 from flask_openapi3 import Tag
-from app.schemas import GenresSchemas, ErrorSchemas
+
+from app import app, db
 from app.models.Genres import Genres
 from app.models.MangaGenres import MangaGenres
-from app import app, db
+from app.schemas import GenresSchemas, ErrorSchemas
 
 # definindo tag Home
 tag = Tag(name="Generos", description="Adição, visualização e remoção de generos da base")

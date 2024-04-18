@@ -1,5 +1,6 @@
 from flask import redirect
 from flask_openapi3 import Tag
+
 from app import app
 
 # definindo tag Home

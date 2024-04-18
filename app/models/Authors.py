@@ -1,5 +1,7 @@
-from app import db
 from datetime import datetime
+
+from app import db
+
 
 class Authors(db.Model):
     __tablename__ = 'authors'

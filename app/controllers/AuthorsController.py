@@ -1,8 +1,9 @@
 from flask_openapi3 import Tag
-from app.schemas import AuthorsSchemas, ErrorSchemas
+
+from app import app, db
 from app.models.Authors import Authors
 from app.models.MangaAuthors import MangaAuthors
-from app import app, db
+from app.schemas import AuthorsSchemas, ErrorSchemas
 
 # definindo tag Home
 tag = Tag(name="Autores", description="Adição, visualização e remoção de autores da base")

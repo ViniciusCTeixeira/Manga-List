@@ -1,8 +1,7 @@
 import os
-from flask_sqlalchemy import SQLAlchemy
-from flask_openapi3 import OpenAPI, Info
 from flask_cors import CORS
-
+from flask_openapi3 import OpenAPI, Info
+from flask_sqlalchemy import SQLAlchemy
 
 info = Info(title="API para gerencimento de Mangas", version="1.0.0")
 instance = os.path.join(os.path.dirname(__file__), 'instance')

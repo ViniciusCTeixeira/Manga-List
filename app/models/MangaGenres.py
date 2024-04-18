@@ -1,5 +1,7 @@
-from app import db
 from datetime import datetime
+
+from app import db
+
 
 class MangaGenres(db.Model):
     __tablename__ = 'manga_genres'
